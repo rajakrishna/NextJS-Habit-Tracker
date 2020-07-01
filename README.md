@@ -1,5 +1,6 @@
 Next JS routing system is all based on pages directory
 
+Using NextJS Apollo with GraphQL
 
 No need to have import React from "react";
 Babel will automatically import react
