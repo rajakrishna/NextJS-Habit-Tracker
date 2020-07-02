@@ -17,3 +17,5 @@ wrapping apollo in a higher order component
 Recommended: getStaticProps or getServerSideProps
 
 If you're using Next.js 9.3 or newer, we recommend that you use getStaticProps or getServerSideProps instead of getInitialProps.
+
+Cannot use nested styled components
