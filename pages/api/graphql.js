@@ -18,7 +18,7 @@ const fakeResolvers = {
 		},
 	},
 };
-
+// We use graphqltoolkit for the merging of resolvers and typedefs
 const resolvers = mergeResolvers([
 	fakeResolvers,
 	habitsResolvers,

@@ -1,6 +1,7 @@
 // Database collections
 import mongoose, { Schema } from "mongoose";
 
+// Schema to be inputted to the MongoDB
 export const HabitsSchema = new Schema({
 	name: {
 		type: String,
