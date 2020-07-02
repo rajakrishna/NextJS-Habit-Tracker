@@ -1,14 +1,31 @@
 import { Form, Field } from "@leveluptuts/fresh";
+import { useMutation } from "@apollo/react-hooks";
+import gql from "graphql-tag";
 
-const HabitForm = ({ setHabits }) => {
+const ADD_HABIT = gql`
+	mutation addHabit($habit: HabitInput) {
+		addHabit(habit: $habit) {
+			_id
+			name
+		}
+	}
+`;
+
+const HabitForm = () => {
+	const [addHabit] = useMutation(ADD_HABIT);
+
 	return (
 		// In fresh use the lowecase version of the title to get the data like
 		// data.habit for the title 'Habit'
 		<Form
 			onSubmit={(data) => {
-				console.log(data);
-				// add the previous state(previous habits) and the new habit to the state
-				setHabits((prevState) => [...prevState, data.habit]);
+				addHabit({
+					variables: {
+						habit: {
+							name: data.habit,
+						},
+					},
+				});
 			}}
 		>
 			<Field>Habit</Field>
