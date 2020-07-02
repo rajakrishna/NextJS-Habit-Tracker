@@ -12,7 +12,9 @@ const ADD_HABIT = gql`
 `;
 
 const HabitForm = () => {
-	const [addHabit] = useMutation(ADD_HABIT);
+	const [addHabit] = useMutation(ADD_HABIT, {
+		refetchQueries: ["getHabits"],
+	});
 
 	return (
 		// In fresh use the lowecase version of the title to get the data like
