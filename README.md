@@ -4,6 +4,9 @@ NextJS is a JavaScript Framework for React that allows you to Server-Side Render
 
 ![habit_tracker_img](https://github.com/rajakrishna/NextJS-Habit-Tracker/blob/master/files/habit_tracker.png)
 
+
+Here are the pros and cons i found while doing this project.
+
 ## Pros of NextJS
 
 Server side rendering
