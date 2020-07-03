@@ -14,7 +14,7 @@ No need to `import React from "react"`. Babel will automatically import react. n
 
 It even imports typescript
 
-Prefetch is true by default. It prefetchs the links
+It prefetchs the links. Prefetch is true by default.
 
 Dynamic routing is very useful by using [route_name] as the file name
 
