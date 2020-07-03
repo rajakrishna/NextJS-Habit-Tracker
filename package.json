@@ -19,7 +19,6 @@
     "graphql": "14.6.0",
     "graphql-tag": "^2.10.3",
     "graphql-toolkit": "0.7.5",
-    "graphql-tools": "6.0.12",
     "isomorphic-unfetch": "^3.0.0",
     "mongoose": "^5.9.21",
     "next": "9.4.4",

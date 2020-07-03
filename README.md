@@ -1,23 +1,27 @@
+# Habit Tracker using NextJs, Apollo, GraphQL and MongoDB
+
+NextJS is a JavaScript Framework for React that allows you to Server-Side Render React
+
+## Pros of NextJS
+
+Server side rendering
+
 Next JS routing system is all based on pages directory
 
 Using NextJS Apollo with GraphQL
 
-No need to have import React from "react";
-Babel will automatically import react
-next/babel has preset-react which import react. You could even import typescript
+No need to `import React from "react"`. Babel will automatically import react. next/babel has preset-react which import react.
 
-Prefetch is true by default. It prefectehs the links
+It even imports typescript
 
-Dynamic routing is very useful by using [route_name]
+Prefetch is true by default. It prefetchs the links
 
-Server side rendering
+Dynamic routing is very useful by using [route_name] as the file name
 
-wrapping apollo in a higher order component
+## Cons of NextJS
 
-Recommended: getStaticProps or getServerSideProps
-
-If you're using Next.js 9.3 or newer, we recommend that you use getStaticProps or getServerSideProps instead of getInitialProps.
+`styled-jsx` is weird to use
 
 Cannot use nested styled components
 
-NextJS caches everything. SO you need to delete the .next folder if you make any chnages to the schema
+NextJS caches everything. So you need to delete the .next folder if you make any changes to the schema
