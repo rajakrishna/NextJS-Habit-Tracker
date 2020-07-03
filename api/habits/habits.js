@@ -1,13 +1,20 @@
-// Database collections
+// Database collection
 import mongoose, { Schema } from "mongoose";
 
-// Schema to be inputted to the MongoDB
+const EventsSchema = new Schema({
+	date: {
+		type: Date,
+		required: true,
+		unique: true,
+	},
+});
+
 export const HabitsSchema = new Schema({
 	name: {
 		type: String,
 		required: true,
 	},
+	events: [EventsSchema],
 });
 
-// if it has a model use it or create one
 export default mongoose.models.habits || mongoose.model("habits", HabitsSchema);
