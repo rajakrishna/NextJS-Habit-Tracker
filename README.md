@@ -1,6 +1,7 @@
 # Habit Tracker using NextJs, Apollo, GraphQL and MongoDB
 
 NextJS is a JavaScript Framework for React that allows you to Server-Side Render React
+Created a simple GraphQL API and connected it to Apollo Server. Used MongoDB as database
 
 ![habit_tracker_img](https://github.com/rajakrishna/NextJS-Habit-Tracker/blob/master/files/habit_tracker.png)
 
